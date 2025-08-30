@@ -1,19 +1,17 @@
-grade= int(input("enter your score:"))
+def calculate_discount(price, discount_percent):
+  
+    if discount_percent >= 20:
+        final_price = price - (price * (discount_percent / 100))
+        return final_price
+    else:
+        return price
 
-if grade >=90 :
+price = float(input("Enter the original price: "))
+discount_percent = float(input("Enter the discount percentage: "))
 
-    print("A")
+final_price = calculate_discount(price, discount_percent)
 
-elif grade >=80 :
-
-    print("B")
-
-elif grade >=70 :
-
-    print("C")
-
-elif grade >=60 :
-
-    print("D")
-
-else: print("F")
+if discount_percent >= 20:
+    print(f"Discount applied! Final price: {final_price:.2f}")
+else:
+    print(f"No discount applied. Price remains: {final_price:.2f}")

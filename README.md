@@ -1,15 +1,16 @@
-Student Grading Program 🎓
+This Python program calculates the final price of an item after applying a discount.
+If the discount is 20% or higher, the discount is applied. Otherwise, the original price is returned.
 
-This Python program asks the user to enter a score and then prints the grade based on the score.
+ How It Works
 
-Grading Scale
+The user is asked to enter the original price of the item.
 
-A → 90 and above
+The user is asked to enter the discount percentage.
 
-B → 80 – 89
+The program uses the calculate_discount(price, discount_percent) function to check:
 
-C → 70 – 79
+If the discount is ≥ 20%, the discount is applied.
 
-D → 60 – 69
+Otherwise, the original price is returned.
 
-F → Below 60
+The final price is printed.
